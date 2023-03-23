@@ -1,6 +1,6 @@
 import Expenses from "./components/Expenses";
-import Clock from "./components/Clock";
 import Card from "./components/Card";
+import NewExpense from "./components/NewExpense/NewExpense";
 function App() {
   const expenses = [
     {id: 1,title: "Car Insurance 1", price: 500000, date: new Date()},
@@ -11,7 +11,7 @@ function App() {
   return ( 
     <Card className="App">
       <h1>Let's Get Started</h1>
-      <Clock />
+      <NewExpense></NewExpense>
       <Expenses expenses={expenses}/>
     </Card>
   );
